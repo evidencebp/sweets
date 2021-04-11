@@ -1,11 +1,11 @@
 This directory is used for small data sets and insights found while playing with the data, reading paper or conducting a different research.
 
 
-# Security 
+# [Security](https://github.com/evidencebp/sweets/tree/main/security) 
 Security related commits.
 Also has reverted security commits, hence the leading to the security problem.
 
-# Performance
+# [Performance](https://github.com/evidencebp/sweets/tree/main/performance)
 Commits dealing with performance issues (e.g. running time, memory).
 
 # Repository description
