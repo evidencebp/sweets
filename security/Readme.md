@@ -1,5 +1,6 @@
 This sweets containt secyrity related commits.
 
+# Security Fixes
 We [extracted](https://github.com/evidencebp/sweets/blob/main/security/code/security_fixes.sql) 261,495 security fixes from 22,820 repositories.
 Repositories are from the BigQuery GitHub schema with 50+ commits during 2020.
 Redundenat and non software repositoreis were filtered out as described in [The Corrective Commit Probability](https://arxiv.org/pdf/2007.10912.pdf).
@@ -9,7 +10,15 @@ Security was identified using the [security language mode](https://github.com/ev
 Fix was identified using the [corrective language mode](https://github.com/evidencebp/commit-classification/blob/master/corrective_model.py)  b472b87 
 
 
+# Reverted Security Commits
 
+We [extracted](https://github.com/evidencebp/sweets/blob/main/security/code/commits_reverted_due_to_security.sql) 2,726 commits reverted due to security from 22,820 repositories.
+Repositories are from the BigQuery GitHub schema with 50+ commits during 2020.
+Redundenat and non software repositoreis were filtered out as described in [The Corrective Commit Probability](https://arxiv.org/pdf/2007.10912.pdf).
+The data is at [commits_reverted_due_to_security.csv]https://github.com/evidencebp/sweets/blob/main/security/data/commits_reverted_due_to_security.csv)
+
+Revert was identified using the [the GitHub default revet message](https://github.com/evidencebp/general/blob/master/queries/reverted_commits.sql) 6583f7b 
+Fix was identified using the [corrective language mode](https://github.com/evidencebp/commit-classification/blob/master/corrective_model.py)  b472b87 
 
 See here the [linguistic commit classification](https://github.com/evidencebp/commit-classification)
 
