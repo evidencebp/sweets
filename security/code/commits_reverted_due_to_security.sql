@@ -10,8 +10,9 @@ select
 r.*
 , ec_reverting.message as reverting_message
 , ec_reverted.message as reverted_message
-, regexp_contains(lower(ec_reverted.message)
-    , 'vulnerabilit(?:y|ies)|cve(-d+)?(-d+)?|security|cyber|threat') as is_original_security
+, ec_reverted.is_security as is_original_security
+#, regexp_contains(lower(ec_reverted.message)
+#    , 'vulnerabilit(?:y|ies)|cve(-d+)?(-d+)?|security|cyber|threat') as is_original_security
 from
 general.reverted_commits as r
 join
@@ -27,8 +28,9 @@ r.repo_name = ec_reverted.repo_name
 and
 r.reverted_commit = ec_reverted.commit
 where
-regexp_contains(lower(ec_reverting.message)
-, 'vulnerabilit(?:y|ies)|cve(-d+)?(-d+)?|security|cyber|threat') # reverted due to security
+ec_reverting.is_security
+#regexp_contains(lower(ec_reverting.message)
+#, 'vulnerabilit(?:y|ies)|cve(-d+)?(-d+)?|security|cyber|threat') # reverted due to security
  order by
 repo_name
 , reverting_commit_timestamp desc

@@ -20,7 +20,8 @@ general.enhanced_commits
 where
 is_corrective
 and
-regexp_contains(lower(message), '(vulnerabilit(?:y|ies)|cve(-d+)?(-d+)?|security|cyber|threat)')
+is_security
+#regexp_contains(lower(message), '(vulnerabilit(?:y|ies)|cve(-d+)?(-d+)?|security|cyber|threat)')
 #regexp_contains(lower(message), 'cve(-d+)?(-d+)?') # 7905
 order by
 repo_name
