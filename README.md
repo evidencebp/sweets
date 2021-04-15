@@ -8,6 +8,11 @@ Also has reverted security commits, hence the leading to the security problem.
 # [Performance](https://github.com/evidencebp/sweets/tree/main/performance)
 Commits dealing with performance issues (e.g. running time, memory).
 
+# [commit-labeling](https://github.com/evidencebp/sweets/tree/main/commit-labeling)
+
+A dataset of commits, labeled by various language models.
+By comparaing different models predictions on these commits one can use active learning to identify informative commits and further imrpve the models.
+
 # Repository description
 This reposotory contain database construction on the BigQuery GitHub scehmea.
 It was constructed as part of
