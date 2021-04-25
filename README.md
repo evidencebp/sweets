@@ -13,6 +13,10 @@ Commits dealing with performance issues (e.g. running time, memory).
 A dataset of commits, labeled by various language models.
 By comparaing different models predictions on these commits one can use active learning to identify informative commits and further imrpve the models.
 
+# [Regular expresions](https://github.com/evidencebp/sweets/tree/main/regular_expresions)
+
+A data set of 110k commits related to regular expressions.
+
 # Repository description
 This reposotory contain database construction on the BigQuery GitHub scehmea.
 It was constructed as part of
