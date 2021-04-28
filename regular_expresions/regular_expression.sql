@@ -22,6 +22,7 @@ repo_name
 , is_security
 , duration
 , same_date_as_prev
+, prev_timestamp
 from
 general.enhanced_commits
 where
@@ -35,6 +36,7 @@ count(*) as commits
 , avg(if(same_date_as_prev, duration, null)) as same_day_duration_avg
 , avg(if(is_performance, 1,0)) as performance_avg
 , avg(if(is_security, 1,0)) as security_avg
+, avg(if(is_corrective, TIMESTAMP_DIFF(commit_timestamp, prev_timestamp, minute), null)) as bug_prev_touch_ago
 from
 general.enhanced_commits
 ;
@@ -45,6 +47,7 @@ count(*) as commits
 , avg(if(same_date_as_prev, duration, null)) as same_day_duration_avg
 , avg(if(is_performance, 1,0)) as performance_avg
 , avg(if(is_security, 1,0)) as security_avg
+, avg(if(is_corrective, TIMESTAMP_DIFF(commit_timestamp, prev_timestamp, minute), null)) as bug_prev_touch_ago
 from
 general.regex_commits
 ;
