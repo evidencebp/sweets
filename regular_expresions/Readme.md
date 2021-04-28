@@ -2,9 +2,10 @@ A data set of 110,424 commits referring to regular expressions.
 These are 0.19% of the commits.
 
 The [corrective commit probability](https://arxiv.org/abs/2007.10912), effort dedicated to bug fixes is 46.7%, 92% higher than the 24.3% in all commits.
-The avarage commit duration is 111 minuts, 26% higher than 88 minutes on all commits (in the same date).
-Regaex commits that are also related to performance are 3.4%, 277% higher than 0.9%.
-Regaex commits that are also related to security are 2.2%, 100% higher than 1.1%.
+The average commit duration is 111 minutes, 26% higher than 88 minutes on all commits (in the same date).
+Regex commits that are also related to performance are 3.4%, 277% higher than 0.9%.
+Regex commits that are also related to security are 2.2%, 100% higher than 1.1%.
+Regex commits are found in average after about 11 days, 68% higher than about 7 days for the rest.
 
 
 
@@ -13,7 +14,7 @@ See here the [linguistic commit classification](https://github.com/evidencebp/co
 See here the [general database construction](https://github.com/evidencebp/general) 
 
 # Repository description
-This reposotory contain database construction on the BigQuery GitHub scehmea.
+This repository contains database construction on the BigQuery GitHub schema.
 It was constructed as part of
 
 # The Corrective Commit Probability Code Quality Metric
@@ -22,12 +23,12 @@ Supplementary Materials of the ["The Corrective Commit Probability Code Quality 
 Please cite as
 ``` 
 @misc{amit2020corrective,
-    title={The Corrective Commit Probability Code Quality Metric},
-    author={Idan Amit and Dror G. Feitelson},
-    year={2020},
-    eprint={2007.10912},
-    archivePrefix={arXiv},
-    primaryClass={cs.SE}
+    title={The Corrective Commit Probability Code Quality Metric},
+    author={Idan Amit and Dror G. Feitelson},
+    year={2020},
+    eprint={2007.10912},
+    archivePrefix={arXiv},
+    primaryClass={cs.SE}
 }
 ```
 
@@ -39,12 +40,11 @@ Supplementary Materials of the ["Follow Your Nose -- Which Code Smells are Worth
 Please cite as
 ``` 
 @misc{amit2021follow,
-      title={Follow Your Nose -- Which Code Smells are Worth Chasing?}, 
-      author={Idan Amit and Nili Ben Ezra and Dror G. Feitelson},
-      year={2021},
-      eprint={2103.01861},
-      archivePrefix={arXiv},
-      primaryClass={cs.SE}
+      title={Follow Your Nose -- Which Code Smells are Worth Chasing?}, 
+      author={Idan Amit and Nili Ben Ezra and Dror G. Feitelson},
+      year={2021},
+      eprint={2103.01861},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE}
 }
 ```
-
