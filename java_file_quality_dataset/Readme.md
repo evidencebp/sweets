@@ -1,4 +1,4 @@
-# Java File Quality Data set
+# Java File Quality Data Set
 
 This data set should enable end-to-end learning, starting from source code and predicting code quality.
 
