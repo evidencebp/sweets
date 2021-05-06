@@ -153,3 +153,21 @@ order by
 low_quality
 , predicted_low_quality
 ;
+
+drop table if exists general.java_file_quality_content_6_may_2021;
+
+create table
+general.java_file_quality_content_6_may_2021
+as
+select
+d.*
+, content
+from
+general.java_file_quality_dataset as d
+join
+general.contents as c
+on
+d.repo_name = c.repo_name
+and
+d.file = c.path
+;
