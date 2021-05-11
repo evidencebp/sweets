@@ -76,3 +76,29 @@ order by
 repo_name
 , author_name
 ;
+
+# Sql injection
+select
+repo_name
+, commit
+, author_name
+, commit_timestamp
+, message
+, is_corrective
+, is_adaptive
+, is_perfective
+, is_refactor
+, is_cursing
+, is_positive_sentiment
+, is_negative_sentiment
+, is_performance
+, files
+, non_test_files
+, code_files
+, code_non_test_files
+, duration
+from
+general.enhanced_commits
+where
+regexp_contains(lower(message), 'sql(-| )injection')
+;
