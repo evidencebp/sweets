@@ -78,6 +78,11 @@ repo_name
 ;
 
 # Sql injection
+drop table if exists general.sql_injection_commits;
+
+create table
+general.sql_injection_commits
+as
 select
 repo_name
 , commit
@@ -97,8 +102,22 @@ repo_name
 , code_files
 , code_non_test_files
 , duration
+, same_date_as_prev
+, prev_timestamp
+, TIMESTAMP_DIFF(commit_timestamp, prev_timestamp, minute) as prev_touch_ago
 from
 general.enhanced_commits
 where
 regexp_contains(lower(message), 'sql(-| )injection')
+;
+
+
+select
+count(*) as commits
+, general.bq_ccp_mle(1.0*count(distinct if(is_corrective, commit, null))/count(distinct commit)) as ccp
+, avg(if(same_date_as_prev, duration, null)) as same_day_duration_avg
+, avg(if(is_performance, 1,0)) as performance_avg
+, avg(if(is_corrective, TIMESTAMP_DIFF(commit_timestamp, prev_timestamp, minute), null)) as bug_prev_touch_ago
+from
+general.sql_injection_commits
 ;
