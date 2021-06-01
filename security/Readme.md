@@ -10,6 +10,8 @@ Security was identified using the [security language mode](https://github.com/ev
 
 Fix was identified using the [corrective language mode](https://github.com/evidencebp/commit-classification/blob/master/corrective_model.py)  b472b87 
 
+There is another data set of 13K [sql injection commits](https://github.com/evidencebp/sweets/blob/main/security/data/sql_injection_commits.csv).
+
 # Reverted Security Commits
 We [extracted](https://github.com/evidencebp/sweets/blob/main/security/code/commits_reverted_due_to_security.sql) 2,726 commits reverted due to security from 22,820 repositories.
 The repositories are from the BigQuery GitHub schema with 50+ commits during 2020.Redundant and non software repositories were filtered out as described in [The Corrective Commit Probability](https://arxiv.org/pdf/2007.10912.pdf).
