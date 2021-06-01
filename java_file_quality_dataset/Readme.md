@@ -13,3 +13,8 @@ We publish it in order to enable experimenting with the direction for the meanwh
 
 We also provide benchmarks to estimate the result of the end to end approach.
 We provide the results of using prior year quality as a predictor, file length and the existence of likely harmful smells, found in ["Follow Your Nose -- Which Code Smells are Worth Chasing?"](https://arxiv.org/pdf/2103.01861.pdf).
+
+The content of the data set files that changed by June 1st 2021 is in contents_diff_1_june_2021.csv.zip
+There are 1,797 such files, out of 12,486 file in the data set.
+Pairing the versions of the same file as positives
+and comparing them to random different files as negatives enable to learn code similarity.
