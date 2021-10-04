@@ -66,4 +66,11 @@ See here the [general database construction](https://github.com/evidencebp/gener
 Research used the model of commit d15d54e
 Repository will keep advancing.
 
+# Versions
+
+[![DOI](https://zenodo.org/badge/356814147.svg)](https://zenodo.org/badge/latestdoi/356814147)
+
+Live version is updating at https://github.com/evidencebp/sweets
+
+Repository will keep advancing.
 
