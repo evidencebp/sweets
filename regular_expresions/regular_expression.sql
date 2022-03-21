@@ -2,7 +2,7 @@
 # https://arxiv.org/pdf/2104.09693.pdf
 
 # Generate regex for regex as
-#     print(build_sepereted_term(['regular\sexpression(s)?','reg(?:-|\s)?ex(p)?(s)?','grep', 'iregex']))
+#     print(build_separated_terms(['regular\sexpression(s)?','reg(?:-|\s)?ex(p)?(s)?','grep', 'iregex']))
 
 drop table if exists general.regex_commits;
 
