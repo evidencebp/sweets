@@ -1,6 +1,6 @@
 This directory lists a text similarity dataset.
 
-The dataset rational is descrubed at [End to End Software Engineering Research](https://arxiv.org/pdf/2112.11858.pdf).
+The dataset rational is described at [End to End Software Engineering Research](https://arxiv.org/pdf/2112.11858.pdf).
 
 The dataset contains three different version of the same textfile from June, August and December 2021.
 The machine learning task should be the closer pair.
