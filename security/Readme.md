@@ -32,15 +32,16 @@ Supplementary Materials of the ["The Corrective Commit Probability Code Quality 
 
 Please cite as
 ``` 
-@misc{amit2020corrective,
-    title={The Corrective Commit Probability Code Quality Metric},
-    author={Idan Amit and Dror G. Feitelson},
-    year={2020},
-    eprint={2007.10912},
-    archivePrefix={arXiv},
-    primaryClass={cs.SE}
-}
-```
+@article{amit2021corrective,
+  title={Corrective commit probability: a measure of the effort invested in bug fixing},
+  author={Amit, Idan and Feitelson, Dror G},
+  journal={Software Quality Journal},
+  volume={29},
+  number={4},
+  pages={817--861},
+  year={2021},
+  publisher={Springer}
+}```
 
 It was later extended as part of
 
