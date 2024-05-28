@@ -10,7 +10,7 @@ See here the [data set creation](https://github.com/evidencebp/commit-classifica
 
 See here [manually labeled commits](https://github.com/evidencebp/commit-classification/blob/master/data/commit_performance_samples.csv).
 
-For description of the data set creation see [Corrective commit probability: a measure of the effort invested in bug fixing](https://link.springer.com/article/10.1007/s11219-021-09564-z).
+For description of the data set creation and selection of projects see [Corrective commit probability: a measure of the effort invested in bug fixing](https://link.springer.com/article/10.1007/s11219-021-09564-z).
 Please cite as:
 ```
 @article{amit2021corrective,
