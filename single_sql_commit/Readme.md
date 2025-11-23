@@ -1,10 +1,10 @@
 A data set of 84,280 commits modifying a signle sql file.
 These are 0.1% of the commits.
 
-The [corrective commit probability](https://link.springer.com/article/10.1007/s11219-021-09564-z), effort dedicated to bug fixes is 19%
-, 92% higher than the 24.3% in all commits.
+The [corrective commit probability](https://link.springer.com/article/10.1007/s11219-021-09564-z), effort dedicated to bug fixes is 28.9%
+, 19% higher than the 24.3% in all commits.
 The average commit duration is 82 minutes, 7% lower than 88 minutes on all commits (in the same date).
-Regex commits that are also related to performance are 0.5%, 45% lower than 0.9%.
+Sql commits that are also related to performance are 0.5%, 45% lower than 0.9%.
 Sql commits that are also related to security are 1.5%, 36% higher than 1.1%.
 Sql bugs are found in average after about 6.2 days, 11% lower than about 7 days for the rest.
 
